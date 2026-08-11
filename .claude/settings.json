@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dig *)",
+      "Bash(open /Users/devinjackson/Desktop/clementinewebco/*)",
+      "Bash(code --list-extensions)"
+    ]
+  }
+}

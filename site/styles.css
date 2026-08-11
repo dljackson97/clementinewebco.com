@@ -267,7 +267,11 @@ section + section { border-top: 1px solid var(--rule); }
   height: 260px;
 }
 @media (max-width: 900px) {
-  .hero-mark { display: none; }
+  .hero-inner { flex-direction: column; }
+  .hero-mark { width: 160px; height: 160px; margin: 0 auto 8px; order: -1; }
+}
+@media (max-width: 480px) {
+  .hero-mark { width: 120px; height: 120px; }
 }
 .hero-actions {
   display: flex;

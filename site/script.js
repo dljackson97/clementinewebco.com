@@ -2,6 +2,21 @@
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// In-page nav links (header nav, hero buttons, brand logo) scroll smoothly
+// without ever writing a #hash into the URL — otherwise refreshing the page
+// re-triggers the browser's native jump-to-anchor and lands mid-page instead
+// of at the top. The skip-link is left alone on purpose (instant jump for
+// keyboard/screen-reader users, not an animated scroll).
+document.querySelectorAll('a[href^="#"]:not(.skip-link)').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    const targetId = link.getAttribute('href').slice(1);
+    const target = document.getElementById(targetId);
+    if (!target) return;
+    event.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
 // Mobile nav toggle
 const navToggle = document.getElementById('navToggle');
 const primaryNav = document.getElementById('primaryNav');

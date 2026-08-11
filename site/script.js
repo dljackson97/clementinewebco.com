@@ -21,11 +21,25 @@ if (navToggle && primaryNav) {
 // Scroll reveal — fade/rise elements in as they enter the viewport.
 // Classes are added here, not in the HTML/CSS, so content stays fully
 // visible by default if JS never runs.
-const revealTargets = document.querySelectorAll(
-  '.case-card, .process-list li, .price-card, .about-inner, .contact-inner'
-);
+// Grid groups get a staggered delay per item so they don't all pop in at
+// once — reads as a much more deliberate, noticeable reveal.
+const revealGroups = [
+  document.querySelectorAll('.case-grid > .case-card'),
+  document.querySelectorAll('.process-list > li'),
+  document.querySelectorAll('.price-grid > .price-card'),
+];
+revealGroups.forEach((group) => {
+  group.forEach((el, i) => {
+    el.classList.add('reveal');
+    el.style.transitionDelay = `${i * 0.15}s`;
+  });
+});
+document.querySelectorAll('.about-inner, .contact-inner').forEach((el) => {
+  el.classList.add('reveal');
+});
+
+const revealTargets = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window && revealTargets.length) {
-  revealTargets.forEach((el) => el.classList.add('reveal'));
   const revealObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -35,7 +49,7 @@ if ('IntersectionObserver' in window && revealTargets.length) {
         }
       });
     },
-    { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+    { threshold: 0.15, rootMargin: '0px 0px -80px 0px' }
   );
   revealTargets.forEach((el) => revealObserver.observe(el));
 }

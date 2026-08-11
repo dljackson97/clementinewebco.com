@@ -450,6 +450,7 @@ section + section { border-top: 1px solid var(--rule); }
 }
 .form-status[data-state="success"] { color: var(--leaf); }
 .form-status[data-state="error"] { color: var(--citrus); }
+.form-status[data-state="error"] a { color: inherit; text-decoration: underline; }
 
 /* ---- Footer ---- */
 .site-footer {

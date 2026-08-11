@@ -134,7 +134,9 @@ if (form && status) {
         throw new Error(result.message || 'Something went wrong.');
       }
     } catch (err) {
-      status.textContent = "Couldn't send that — try emailing devin@clementinewebco.com directly.";
+      status.innerHTML = 'Something went wrong sending that — text me directly at '
+        + '<a href="sms:+17575048502">(757) 504-8502</a> for a fast response, '
+        + 'or email <a href="mailto:devin@clementinewebco.com">devin@clementinewebco.com</a>.';
       status.setAttribute('data-state', 'error');
     }
   });

@@ -35,7 +35,7 @@ Business details, photos, written content, and your logo if you have one. The si
 
 ### 4. Ownership
 
-Until the Build fee (Section 2) or the Buyout fee (Section 8) is paid in full, Clementine owns the design and source code of the site. Once the Build fee is paid, you have the right to use the live, hosted site for as long as you're either current on the Care Plan (Section 5) or have completed the Buyout (Section 8). Clementine keeps ownership of the underlying source code and design unless and until you complete the Buyout.
+Clementine owns the design and source code of the site unless and until you complete the Buyout (Section 8). Paying the Build fee (Section 2) gives you the right to use the live, hosted site — not ownership of the underlying code or design — for as long as you're either current on the Care Plan (Section 5) or the site is in the frozen state described in Section 6. Completing the Buyout transfers full ownership of the source code and design to you.
 
 ### 5. Care Plan — $50/month, optional
 

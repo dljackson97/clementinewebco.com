@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Clementine Web Co. — Websites for St. Petersburg Small Businesses</title>
-<meta name="description" content="See your new website before you pay for it. Clementine Web Co. builds small businesses in St. Petersburg, FL a real, working website on spec — free — then a flat $500 to go live.">
+<meta name="description" content="See your new website before you pay for it. Clementine Web Co. builds small businesses in St. Petersburg, FL a real, working website first — free — then a flat $500 to go live.">
 <link rel="icon" type="image/svg+xml" href="brand/clementine-mark-on-light.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +41,7 @@
     <div class="wrap hero-inner">
       <p class="eyebrow">St. Petersburg, FL</p>
       <h1 class="text-balance">See your new website before you pay for it.</h1>
-      <p class="lede">I build small businesses a real, working website on spec — free, no obligation — using your actual name and business. If you like it, it's a flat <strong>$500</strong> to make it live. If you don't, you've lost nothing.</p>
+      <p class="lede">I build small businesses a real, working website first — free, no obligation — using your actual name and business. If you like it, it's a flat <strong>$500</strong> to make it live. If you don't, you've lost nothing.</p>
       <div class="hero-actions">
         <a href="#work" class="btn btn-primary">See Recent Work</a>
         <a href="#process" class="btn btn-ghost">How It Works</a>
@@ -132,7 +132,7 @@
       <div class="about-copy">
         <p class="eyebrow">About</p>
         <h2 class="text-balance">Hi, I'm Devin.</h2>
-        <p>I build websites for St. Petersburg's barbershops, food trucks, and neighborhood shops — not enterprise clients chasing venture funding. I started by rebuilding a couple of these on my own time, on spec, before asking anyone to pay me for it — the two sites above are still live, still running for real local businesses. <!-- DRAFT paragraph — replace with your real story: how you got started, your background before this, why St. Pete specifically --></p>
+        <p>I build websites for St. Petersburg's barbershops, food trucks, and neighborhood shops — not enterprise clients chasing venture funding. I started by rebuilding a couple of these on my own time, before asking anyone to pay me for it — the two sites above are still live, still running for real local businesses. <!-- DRAFT paragraph — replace with your real story: how you got started, your background before this, why St. Pete specifically --></p>
         <p>I'm local, I answer my phone, and I'm not a call center. If something needs to change, you text me — that's the whole support experience.</p>
       </div>
     </div>
@@ -167,6 +167,10 @@
           <input type="text" id="contactInfo" name="contact info" required autocomplete="email">
         </div>
         <div class="form-row">
+          <label for="existingWebsite">Existing website <span class="optional">(optional)</span></label>
+          <input type="text" id="existingWebsite" name="existing website" autocomplete="url" placeholder="yoursite.com, or a Facebook/Instagram page">
+        </div>
+        <div class="form-row">
           <label for="message">What are you looking for?</label>
           <textarea id="message" name="message" rows="4"></textarea>
         </div>
@@ -188,6 +192,13 @@
     </nav>
   </div>
 </footer>
+
+<div class="site-popup" id="sitePopup" role="dialog" aria-label="Contact prompt">
+  <button class="site-popup-close" id="sitePopupClose" aria-label="Close">&times;</button>
+  <h3>Thinking about a new site?</h3>
+  <p>Free mockup, no obligation — see it before you pay a cent.</p>
+  <a href="#contact" class="btn btn-primary">Contact Me Today</a>
+</div>
 
 <script src="script.js"></script>
 </body>

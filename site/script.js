@@ -18,6 +18,53 @@ if (navToggle && primaryNav) {
   });
 }
 
+// Scroll reveal — fade/rise elements in as they enter the viewport.
+// Classes are added here, not in the HTML/CSS, so content stays fully
+// visible by default if JS never runs.
+const revealTargets = document.querySelectorAll(
+  '.case-card, .process-list li, .price-card, .about-inner, .contact-inner'
+);
+if ('IntersectionObserver' in window && revealTargets.length) {
+  revealTargets.forEach((el) => el.classList.add('reveal'));
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+  );
+  revealTargets.forEach((el) => revealObserver.observe(el));
+}
+
+// Bottom-right contact popup — shows once per browser session, 3s after load.
+const popup = document.getElementById('sitePopup');
+const popupClose = document.getElementById('sitePopupClose');
+if (popup && popupClose) {
+  let dismissed = false;
+  try {
+    dismissed = sessionStorage.getItem('popupDismissed') === '1';
+  } catch (err) {
+    /* sessionStorage unavailable (e.g. private mode) — just show it every time */
+  }
+  if (!dismissed) {
+    setTimeout(() => popup.classList.add('is-visible'), 3000);
+  }
+  const dismiss = () => {
+    popup.classList.remove('is-visible');
+    try {
+      sessionStorage.setItem('popupDismissed', '1');
+    } catch (err) {
+      /* ignore */
+    }
+  };
+  popupClose.addEventListener('click', dismiss);
+  popup.querySelector('a')?.addEventListener('click', dismiss);
+}
+
 // Contact form — progressive enhancement over Web3Forms.
 // If fetch fails or JS is off, the form still works via its normal action/method.
 const form = document.getElementById('contactForm');

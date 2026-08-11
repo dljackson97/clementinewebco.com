@@ -387,6 +387,11 @@ section + section { border-top: 1px solid var(--rule); }
   letter-spacing: 0.06em;
   color: var(--muted);
 }
+.form-row label .optional {
+  text-transform: none;
+  letter-spacing: normal;
+  opacity: 0.7;
+}
 .form-row input, .form-row textarea {
   font-family: var(--font-body);
   font-size: 16px;
@@ -453,4 +458,73 @@ section + section { border-top: 1px solid var(--rule); }
   list-style: none;
   padding: 0;
   font-family: var(--font-display);
+}
+
+/* ---- Scroll reveal ---- */
+/* .reveal is added by script.js only (progressive enhancement) — content is
+   fully visible by default if JS never runs. */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- Contact popup ---- */
+.site-popup {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 280px;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  box-shadow: 0 14px 36px rgba(23, 19, 15, 0.2);
+  padding: 20px 20px 18px;
+  z-index: 200;
+  opacity: 0;
+  transform: translateY(16px);
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.site-popup.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.site-popup-close {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 6px;
+}
+.site-popup-close:hover { color: var(--citrus); }
+.site-popup h3 {
+  font-family: var(--font-display);
+  font-size: 16px;
+  margin: 0 0 6px;
+  padding-right: 16px;
+}
+.site-popup p {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+.site-popup .btn {
+  width: 100%;
+  justify-content: center;
+  padding: 10px 16px;
+  font-size: 14px;
+}
+@media (max-width: 480px) {
+  .site-popup { left: 16px; right: 16px; width: auto; bottom: 16px; }
 }

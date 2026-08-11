@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Clementine Web Co. mark: viewed from directly behind, a stick figure with a clementine head sits at a desk, laptop screen peeking out above and beside the head">
+  <title>Clementine Web Co.</title>
+  <!-- screen, drawn first so the head overlaps its center and it only peeks out around the head -->
+  <rect x="82" y="36" width="76" height="68" rx="4" fill="none" stroke="#F5EFE3" stroke-width="8" />
+  <g fill="none" stroke="#F5EFE3" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <!-- desk top, split around the keyboard gap -->
+    <line x1="36" y1="128" x2="92" y2="128" />
+    <line x1="148" y1="128" x2="204" y2="128" />
+    <!-- desk legs -->
+    <line x1="40" y1="128" x2="40" y2="210" stroke-width="8" />
+    <line x1="200" y1="128" x2="200" y2="210" stroke-width="8" />
+    <!-- keyboard, sitting in the gap -->
+    <line x1="96" y1="124" x2="144" y2="124" stroke-width="8" />
+    <!-- stool -->
+    <line x1="110" y1="150" x2="130" y2="150" stroke-width="8" />
+    <line x1="120" y1="150" x2="120" y2="210" stroke-width="6" />
+    <!-- figure: legs, mirrored left/right -->
+    <polyline points="120,150 108,176 102,210" />
+    <polyline points="120,150 132,176 138,210" />
+    <!-- figure: torso, straight down the centerline -->
+    <line x1="120" y1="150" x2="120" y2="100" />
+    <!-- figure: arms, mirrored to the keyboard -->
+    <line x1="120" y1="100" x2="98" y2="122" />
+    <line x1="120" y1="100" x2="142" y2="122" />
+    <!-- leaf stem -->
+    <line x1="120" y1="50" x2="120" y2="40" stroke-width="6" />
+  </g>
+  <!-- head, back of it, centered -->
+  <circle cx="120" cy="75" r="25" fill="#EF7C22" stroke="#F5EFE3" stroke-width="10" />
+  <!-- leaf -->
+  <path d="M120,33 C126,23 139,23 144,29 C139,36 126,36 120,33 Z" fill="#74923F" />
+</svg>

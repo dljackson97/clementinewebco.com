@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Clementine Web Co. mark, single-color version for stamps, engraving, or one-color printing">
+  <title>Clementine Web Co. (monochrome)</title>
+  <rect x="82" y="36" width="76" height="68" rx="4" fill="none" stroke="#211B16" stroke-width="8" />
+  <g fill="none" stroke="#211B16" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="36" y1="128" x2="92" y2="128" />
+    <line x1="148" y1="128" x2="204" y2="128" />
+    <line x1="40" y1="128" x2="40" y2="210" stroke-width="8" />
+    <line x1="200" y1="128" x2="200" y2="210" stroke-width="8" />
+    <line x1="96" y1="124" x2="144" y2="124" stroke-width="8" />
+    <line x1="110" y1="150" x2="130" y2="150" stroke-width="8" />
+    <line x1="120" y1="150" x2="120" y2="210" stroke-width="6" />
+    <polyline points="120,150 108,176 102,210" />
+    <polyline points="120,150 132,176 138,210" />
+    <line x1="120" y1="150" x2="120" y2="100" />
+    <line x1="120" y1="100" x2="98" y2="122" />
+    <line x1="120" y1="100" x2="142" y2="122" />
+    <line x1="120" y1="50" x2="120" y2="40" stroke-width="6" />
+  </g>
+  <circle cx="120" cy="75" r="25" fill="#211B16" stroke="#211B16" stroke-width="10" />
+  <path d="M120,33 C126,23 139,23 144,29 C139,36 126,36 120,33 Z" fill="#211B16" />
+</svg>

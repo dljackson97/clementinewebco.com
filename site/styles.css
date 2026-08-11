@@ -31,6 +31,7 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 html, body { margin: 0; padding: 0; }
+html { overflow-x: hidden; } /* safety net: prevents any future overflow from producing a horizontal scrollbar/cut-off content */
 body {
   background: var(--paper);
   color: var(--ink);
@@ -108,7 +109,7 @@ p { margin: 0 0 16px; }
 
 .lede {
   font-size: 20px;
-  max-width: 56ch;
+  max-width: min(56ch, 100%);
   color: var(--ink);
 }
 
@@ -229,12 +230,45 @@ section + section { border-top: 1px solid var(--rule); }
   }
   .primary-nav a { padding: 12px 0; width: 100%; }
   .primary-nav.open { display: flex; }
-  .nav-cta { margin-top: 8px; }
+  /* Higher specificity than ".primary-nav a" on purpose — otherwise its
+     padding:12px 0 wins and strips the button's horizontal padding,
+     leaving the label jammed against the edge of the black box. */
+  .primary-nav a.nav-cta {
+    margin-top: 8px;
+    padding: 14px 18px;
+    text-align: center;
+    box-sizing: border-box;
+  }
 }
 
 /* ---- Hero ---- */
-.hero { padding-top: 88px; padding-bottom: 88px; border-top: none; }
-.hero-inner { max-width: 780px; }
+/* Fills the viewport on load regardless of screen size, so no part of the
+   next section is visible until the user actually scrolls. --header-h is
+   measured and set by script.js; the 72px fallback covers no-JS/pre-JS. */
+.hero {
+  min-height: calc(100svh - var(--header-h, 72px));
+  padding-top: 88px;
+  padding-bottom: 88px;
+  border-top: none;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+.hero-copy { max-width: 680px; }
+.hero-mark {
+  flex-shrink: 0;
+  width: 260px;
+  height: 260px;
+}
+@media (max-width: 900px) {
+  .hero-mark { display: none; }
+}
 .hero-actions {
   display: flex;
   gap: 16px;
@@ -262,8 +296,11 @@ section + section { border-top: 1px solid var(--rule); }
 .case-card:hover { transform: translateY(-3px); }
 .case-card-top {
   display: block;
-  height: 96px;
-  background: linear-gradient(135deg, var(--case-a), var(--case-b));
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: top center;
+  background: var(--paper-2); /* shows while the screenshot loads */
 }
 .case-card-body { padding: 24px; }
 .case-card-body p { color: var(--muted); font-size: 15px; }
@@ -356,7 +393,7 @@ section + section { border-top: 1px solid var(--rule); }
   justify-content: center;
   flex-shrink: 0;
 }
-.about-copy { flex: 1; min-width: 280px; max-width: 60ch; }
+.about-copy { flex: 1; min-width: 280px; max-width: min(60ch, 100%); }
 
 /* ---- Contact ---- */
 .contact-inner {

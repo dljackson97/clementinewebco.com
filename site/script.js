@@ -2,6 +2,19 @@
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Measure the real header height so the hero (.hero, styles.css) can fill
+// exactly the rest of the viewport on load — the header's height shifts
+// slightly between breakpoints (mobile hamburger vs. full nav), so this is
+// more reliable than hard-coding a number.
+const siteHeader = document.querySelector('.site-header');
+if (siteHeader) {
+  const setHeaderHeight = () => {
+    document.documentElement.style.setProperty('--header-h', `${siteHeader.offsetHeight}px`);
+  };
+  setHeaderHeight();
+  window.addEventListener('resize', setHeaderHeight);
+}
+
 // In-page nav links (header nav, hero buttons, brand logo) scroll smoothly
 // without ever writing a #hash into the URL — otherwise refreshing the page
 // re-triggers the browser's native jump-to-anchor and lands mid-page instead

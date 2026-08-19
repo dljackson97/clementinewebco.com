@@ -3,7 +3,7 @@
 **Owner:** Devin Jackson
 **Market:** St. Petersburg, FL (Pinellas County) small businesses
 **Status:** Pre-launch — proof of work exists (Kalib Koons, Clementine Speech Therapy), no legal entity yet
-**Last updated:** August 11, 2026 (business name and brand mark locked in: Clementine Web Co.)
+**Last updated:** August 19, 2026 (added Section 4b — Pro Care Plan, a second contract track for professional-service clients)
 
 ---
 
@@ -130,6 +130,65 @@ This is the headline of the $50/month offer, not a footnote: **while they're an 
 
 ---
 
+## 4b. Pro Care Plan — A Second Contract Track for Higher-Value Clients (Draft, Not Yet Live)
+
+**Status: drafted for review, not reflected on clementinewebco.com yet.** The $500/$50/$500 model in Section 4 stays exactly as-is for the barbershop/food-truck/salon segment — don't touch that pricing, the "less than a dinner out" anchor is deliberately tuned to cash-tight operators. This section adds a **second contract track**, not a "higher tier of the same thing," for a different kind of client: local professional-service businesses where a single new customer is worth far more than a haircut.
+
+### Where this came from
+An informal audit of a friend's practice site, **Eagle Sport & Spine** (eaglesportandspine.com, a St. Pete sports chiropractor), triggered this. He's paying **$275/month** for "hosting + SEO" to a freelancer. The site itself:
+- Loads in **10–15 seconds** (Google's "good" threshold is 2.5s) — a severe, measurable problem, not a matter of taste.
+- Has **no Google Analytics, Tag Manager, or Meta Pixel** — no conversion tracking of any kind.
+- Has **no phone number anywhere on the homepage**, and no `tel:` link.
+- Has **no LocalBusiness/MedicalBusiness schema** (only a bare Organization block — missing phone, address, hours, geo).
+- Runs on a **duplicate live domain** (masteringmotion.com mirrors the same business with no canonical/redirect), splitting whatever search authority it has.
+- Shows no real Google Business Profile / review presence in search — the single biggest local-pack ranking factor, apparently unmanaged.
+
+What *is* done well: 22 dedicated service pages each targeting a specific long-tail local search term, a well-formed title/meta description, and genuinely good positioning copy. So the content strategy has real thought behind it — the technical execution (the part that actually requires ongoing, skilled work) is where it falls apart. **The takeaway isn't "he's being scammed," it's "this is the market rate for mediocre execution."** A client base like this will pay $200–300+/month even when what they're getting is this thin, because the math is on their side: one retained patient is worth thousands over time, so $275/month is a rounding error, not a decision.
+
+### Naming — avoid "growth," avoid ranked-sounding labels
+Nothing about this needs to sound like a hierarchy, and none of it is ever displayed publicly side-by-side (Section 4 already moved Care Plan pricing off the site entirely — it's quoted live, per client). So the names only need to work for you, internally, and in two separate signed agreements:
+- **Care Plan** — the existing $50/month plan, unchanged, no rename needed.
+- **Pro Care Plan** — the new one. "Pro" describes the client's business (a licensed professional practice), not a ranking of the client themselves. Avoids "growth," "premium," "tier 2," or anything that implies one client is more valued than another.
+
+### The real differentiation — it's not affordability, it's scope of ongoing work
+This is the important distinction: **Pro Care Plan clients aren't paying more for the same service because they can afford it — they're paying for a genuinely different, larger scope of ongoing work.** If the only difference were the price, this would be pure price discrimination and hard to defend if two clients ever compared notes. Instead:
+
+| | **Care Plan** ($50/mo) | **Pro Care Plan** (new) |
+|---|---|---|
+| What it is | Reactive maintenance | Reactive maintenance **+** proactive marketing management |
+| Hosting, unlimited small edits, full-redesign perk | Included | Included |
+| Analytics + call tracking (GA4/GTM installed, monitored) | Not included | Included |
+| LocalBusiness/MedicalBusiness schema, kept current | Not included | Included |
+| Google Business Profile management + review-generation system | Not included | Included |
+| Ongoing page-speed/technical health checks | Not included | Included |
+| Monthly written check-in (what changed, what's next) | Not included | Included |
+| Response time | Standard | Priority |
+
+That's the honest answer to "what's the real difference in value": Care Plan keeps a site online and current. Pro Care Plan actively works the site as a marketing asset every month. That's real, ongoing labor on your end — the price difference maps to real scope, not just what the client can afford.
+
+### The offer
+| Contract | Build fee | Monthly | Target client |
+|---|---|---|---|
+| **Contract A — Care Plan** (unchanged) | $500 one-time | $50/month | Barbershops, food trucks, salons, pet groomers — Section 3 target list |
+| **Contract B — Pro Care Plan** *(new)* | **$1,000–1,500 one-time** | **$150–250/month** — anchor around $175–199 as the default quote, flex up for multi-provider practices | Chiropractors, dentists, PTs, med spas, lawyers, contractors, vets — any local professional service where a single client/patient is worth $500+ in lifetime value |
+
+### Two separate contracts, not one contract with a price blank
+- **Contract A** = the existing generic template (`contracts/Website-Development-Care-Plan-Agreement.docx`, the one Kalib Koons signed) — no changes needed, it already doesn't hardcode Care Plan specifics beyond the $50/mo figure.
+- **Contract B** = a new agreement built from the same legal skeleton, with Section 5 (Care Plan) replaced by the Pro Care Plan scope table above, and the Build fee changed to the $1,000–1,500 range. Draft source: `contracts/pro-care-plan-agreement.md` (see below) — same gotchas apply as the existing template (Section 8 note in the main plan, and [[contracts-and-esign]]): review before use, export to .docx/.pdf and re-export by hand after any edit, close the file in Word before scripted edits.
+
+### Market comparison — why these numbers aren't a stretch
+Pulled via web search, August 19, 2026 — verify current rates before quoting, this market moves:
+- **Small-business website builds:** freelancers typically charge $500–5,000, agencies $3,000–15,000+, with most professional small-business builds landing $3,000–8,000. A $1,000–1,500 Build fee for Contract B is on the affordable end of that range, not a stretch for a licensed professional practice already carrying equipment/insurance/lease costs.
+- **Local SEO monthly retainers:** the broad market runs $500–2,500/month; for chiropractors specifically, single-location practices commonly see $1,000–2,500/month, with some shops' entry packages starting around $1,499/month. Eagle Sport & Spine's $275/month is on the *cheap* end of real SEO retainer pricing — meaning the $150–250/mo Pro Care Plan anchor is priced meaningfully *below* what a real competing SEO agency charges, while still being a large step up from the $50/mo Care Plan. That's the honest pitch: better execution than what they likely have now, for less than a real SEO retainer costs.
+- **WordPress vs. hand-coded:** WordPress is the near-universal default for agencies/freelancers in this space (a professional WordPress build runs $3,000–10,000+ vs. $20,000+ for fully custom code) — so Eagle Sport & Spine being built on WordPress/Elementor isn't itself a red flag, it's standard practice. The actual gap is execution quality (missing analytics, schema, page speed) on a platform whose plugins make those things easy to get right. Worth noting as a genuine differentiator: Clementine's hand-coded, no-framework approach (Section 1) is what the market normally reserves for $20k+ custom builds — "leaner, faster, more secure, built exactly for the goal" — a legitimate selling point, not just an internal cost-saving choice.
+
+### Open questions before this goes live
+- Exact anchor price within the $150–250 range — land on one number once you've quoted it live a couple of times and felt out real reactions.
+- Whether Pro Care Plan needs its own liability language beyond Contract A's (e.g., no guaranteed ranking/traffic outcomes — standard SEO-industry disclaimer, keeps liability sane given the added marketing scope).
+- Whether to pitch Eagle Sport & Spine directly (a friend, so this is a judgment call, not a strategy call) — the audit above is a ready-made, specific "here's what's broken and here's the fix" pitch if you want to use it, but worth deciding deliberately rather than defaulting into it because the research is already done.
+
+---
+
 ## 5. Marketing the Value of the $50/Month
 
 The single biggest risk to this model is a client asking "why would I pay $50/month for a website that's already done?" You need language ready that never lets the conversation become about hosting cost (which is commoditized and cheap-sounding) and instead keeps it about **their time and risk**.
@@ -190,11 +249,39 @@ The reason this works better than a typical cold-call pitch: **you're never aski
 **If they say "I already have a website / Facebook page":**
 > "Totally get it — a lot of the businesses I've done this for already had something up. I'm not asking you to change anything today, I just think you'll like seeing the design — no pressure either way."
 
+*If they push back further ("I don't really need one, Facebook's enough"), a real, sourced stat to have in your pocket — don't lead with it, this is a fallback for genuine resistance, not part of the default script:*
+> "That's fair — a lot of people get by on it. Just worth knowing: something like 76-98% of people look a business up online before ever showing up, depending on which survey you look at. Facebook covers some of that, but a real site is what shows up when they Google you directly." *(Sourced: [PRNewswire/consumer survey](https://www.prnewswire.com/news-releases/76-of-consumers-look-at-online-presence-before-physically-visiting-a-business-301272462.html), [BrightLocal](https://www.brightlocal.com/resources/local-seo-statistics/) — cite loosely, don't overstate a single hard number since surveys vary. Do **not** use any "X% of businesses without a website fail" framing — that stat isn't real/traceable to a credible source, it's marketing folklore, and using it risks your credibility if anyone checks.)*
+
 **If they say "we're not interested":**
 > "No worries at all — the link's still there if you ever want to take a look. Zero obligation, and if it's not for you, no hard feelings."
 
 **If they engage and want to talk further:**
 > "Perfect — I can do [two specific time options], happy to hop on a quick call or swing by if that's easier for you. Should only take five minutes."
+
+### 7a-ii. Cold Call Script (Phone-Only, No Text/Email or Owner Name On File)
+
+Use this when a prospect genuinely has no other channel — no owner name, no email, and the phone number itself came from a directory listing rather than the business's own site. The call *is* the introduction. Same goal as 7a: get permission to text the link, nothing more — don't try to describe the website in detail over the phone, and don't try to close anything on a cold call.
+
+**Opening:**
+> "Hi, is this [Business Name]? ... Hey, my name's Devin, I run a small web design studio here in [City], Clementine Web Co. Do you have a quick second?"
+
+**If yes:**
+> "Great — I came across [Business Name] on [Angi/Yelp/wherever found], saw the reviews, and noticed there wasn't really a website to go with it. So I actually went ahead and built a free sample site, no charge, just to show what it could look like. Would it be alright if I text you the link so you can take a look whenever you get a chance?"
+
+**If they ask why you'd do that for free:**
+> "Fair question — it's basically how I find new clients. I build the sample first so you can see exactly what you'd be getting before anyone pays anything. If you like it, I can build out the real thing for a flat $500. If not, no hard feelings, it cost you nothing to look."
+
+**If they seem busy or rushed:**
+> "No worries, I'll keep it quick — can I just text you the link and you can look whenever's convenient? Takes two seconds."
+
+**If they say they're not interested before you even get the ask out:**
+> "Totally understand — mind if I just leave the link with you in case that changes? No follow-up calls, I promise."
+
+**Voicemail / no answer:** Don't leave a long cold voicemail, they rarely get returned. If it's a real mailbox (not full), keep it to one line: "Hey, this is Devin with Clementine Web Co, a web design studio in St. Pete. Built a free sample website for [Business Name], no charge, would love for you to take a look. Give me a call back at [number], or I'll try again another time." Then actually try again in a few days rather than waiting on a callback.
+
+**Once they agree to the text:** Send it within a minute or two while it's fresh — "Hey, this is Devin, we just spoke on the phone. Here's that sample site: [link]. No rush, let me know what you think whenever!"
+
+**Before you dial — verify the lead is actually worth the call:** a phone-only, no-name prospect usually means the research was thinner than usual, so sanity-check it's still open first: search the business name plus "closed," check Sunbiz.org for LLC status if it's a Florida LLC (a voluntary or administrative dissolution filed years ago, combined with no recent reviews, is a strong sign it's no longer operating even if directory listings still show it), and check the actual dates on reviews, not just the star rating — a 5.0 rating from reviews that are all 5+ years old with nothing since means the listing is stale, not that the business is thriving. A ghost listing wastes the call, and the call itself can double as the final verification if the research alone can't settle it.
 
 ### 7b. Reveal Meeting Script (Close the $500 Build)
 

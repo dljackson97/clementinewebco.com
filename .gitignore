@@ -4,3 +4,9 @@
 
 # Personal business-formation records — not for the public repo
 Organization Documents/
+
+# Internal sales pipeline / client planning docs — not for the public repo
+Client Websites/
+
+# Local email signature source (references the live logo asset in site/brand/, not itself part of the site)
+email-signature/

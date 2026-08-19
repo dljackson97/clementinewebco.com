@@ -52,7 +52,7 @@ No contract, no minimum term — cancel anytime.
 
 Canceling doesn't take your site down. It freezes exactly as it is — live, online, but no further edits — until you do one of the following:
 
-- **(a)** Pay a flat **$500** for a new, unscoped round of work (treated like a fresh build); the site freezes again afterward unless you resubscribe, or
+- **(a)** Pay **$500 — the same fee as your original Build (Section 2)** — for a new, unscoped round of work (treated like a fresh build); the site freezes again afterward unless you resubscribe, or
 - **(b)** Resubscribe to the $50/month Care Plan, or
 - **(c)** Complete the Buyout (Section 8) and take the site elsewhere.
 
@@ -62,9 +62,9 @@ Canceling doesn't take your site down. It freezes exactly as it is — live, onl
 - **Need one registered?** We'll register it with **you** listed as the owner of record; we just manage the day-to-day technical setup.
 - The first year of domain registration is included in the Build fee. Ongoing renewal (roughly $12–15/year) is included while you're on the Care Plan. If you're not on the Care Plan, we'll reach out near the renewal date to offer to renew it for the fee or hand the account fully over to you; if we don't hear back, it lapses through the registrar in the normal course — we won't renew it out of pocket on your behalf.
 
-### 8. Buyout — $500 flat, anytime
+### 8. Buyout — same as your Build fee, anytime
 
-At any point, you can pay a flat $500 to take full ownership of the site's source code and design and host it independently, wherever you like. This ends any Care Plan billing and our hosting responsibility for the site.
+At any point, you can pay **$500 — the same fee as your original Build (Section 2)** — to take full ownership of the site's source code and design and host it independently, wherever you like. This ends any Care Plan billing and our hosting responsibility for the site.
 
 ### 9. What we don't guarantee
 

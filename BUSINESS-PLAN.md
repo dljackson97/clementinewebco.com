@@ -3,7 +3,7 @@
 **Owner:** Devin Jackson
 **Market:** St. Petersburg, FL (Pinellas County) small businesses
 **Status:** Pre-launch — proof of work exists (Kalib Koons, Clementine Speech Therapy), no legal entity yet
-**Last updated:** August 19, 2026 (added Section 4b — Pro Care Plan, a second contract track for professional-service clients)
+**Last updated:** August 22, 2026 (Section 4b — added the build-scope breakdown: what concretely differs between a $500 and a $1,000-1,500 build, with examples)
 
 ---
 
@@ -165,6 +165,26 @@ This is the important distinction: **Pro Care Plan clients aren't paying more fo
 | Response time | Standard | Priority |
 
 That's the honest answer to "what's the real difference in value": Care Plan keeps a site online and current. Pro Care Plan actively works the site as a marketing asset every month. That's real, ongoing labor on your end — the price difference maps to real scope, not just what the client can afford.
+
+### The build itself — what actually makes it bigger, not just pricier
+Same principle applies to the Build fee as to the Care Plan above. If a client ever asks "why is my build a thousand dollars when [barbershop] paid $500," this is the real, defensible answer — not "because you can afford it":
+
+| | **Contract A build** ($500) | **Contract B build** ($1,000–1,500) |
+|---|---|---|
+| Page count | One page (or a few sections on one page) | 8–15 real pages — a dedicated page per condition/service treated |
+| Content depth | Hours, services/menu, gallery, a few testimonials — brief, scannable | Credentials, methodology, insurance/payment info, a real FAQ — written to build trust before first contact |
+| Lead capture | Simple contact form | Tracked, structured intake/consultation flow, built in from day one |
+| Technical setup at launch | Basic on-page SEO for one location/service | LocalBusiness/MedicalBusiness schema, analytics, call tracking wired in before launch, not retrofitted later |
+| Multi-provider support | Not applicable | Individual bio pages, if more than one practitioner |
+| Revision rounds | Straightforward — "does this look right" | More back-and-forth — medical/legal claims have to be worded carefully |
+
+**Who's on which side, concretely:**
+- **Contract A:** Barber Sami, Tyrone Barber Shop, Ubuntu Food Truck, Alphonse Grooming, Nails by Lina (Section 3) — same shape as house cleaners, lawn care, dog walkers, coffee shops, solo personal trainers. Single location, single service category, fast/low-stakes buying decision — "does this look legit, what are the hours, can I see their work."
+- **Contract B:** chiropractors, dentists, PTs, med spas, law firms, vets, home-service contractors (HVAC/plumbing/electrical/roofing) — Eagle Sport & Spine (above) is the direct comp. Buying decision is slow, researched, high-stakes — before someone calls a chiropractor or hires a contractor for a $10,000 roof, they read credentials, compare providers, want to feel informed. A one-page site can't carry that; it takes real page count and content depth to earn the call.
+
+**Why this matters more than the ongoing-scope table above:** the Care Plan difference only comes up after someone's already a client. The Build difference is what a prospect sees and evaluates *before* paying anything — it has to visibly justify itself standing alone, not just ride along with the monthly plan.
+
+**The one-line answer, if a client asks directly:** not *"because you can afford more"* — it's *"your site does more work, and stays actively managed as a marketing asset, not just kept online."* Both the build (real page count, real content depth, lead infrastructure) and the ongoing plan (analytics, schema upkeep, GBP/review management, monthly check-ins vs. reactive small edits) are genuinely bigger in scope, not just pricier for the same thing.
 
 ### The offer
 | Contract | Build fee | Monthly | Target client |
